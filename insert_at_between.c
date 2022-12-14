@@ -14,3 +14,14 @@ struct Node * insertAfterNode(struct Node *head, struct Node *prevNode, int data
  
     return head;
 }
+int main(){
+	struct node*head;
+	head=(struct node*)malloc(sizeof(struct node));
+	third = (struct Node *)malloc(sizeof(struct Node));
+	 head->data = 1;
+    head->next = third;
+	 third->data = 41;
+         third->next = NULL;
+	head=insert_in_between(head,third,56);
+	return 0;
+}
