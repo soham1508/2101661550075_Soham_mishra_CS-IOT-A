@@ -14,3 +14,9 @@ void insert_at_beg(node **head,int item)
 	s->next=*head;
 	*head=s;
 }
+int main(){
+	struct node*head;
+	head=(struct node*)malloc(sizeof(struct node));
+	head=insert_at_beg(head,56);
+	return 0;
+}
