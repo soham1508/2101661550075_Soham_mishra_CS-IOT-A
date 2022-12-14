@@ -16,6 +16,6 @@ struct Node * insertAtEnd(struct Node *head, int data){
 int main(){
 	struct node*head;
 	head=(struct node*)malloc(sizeof(struct node));
-	head=insert_at_end(head,56);
+	head=insertAtEnd(head,56);
 	return 0;
 }
