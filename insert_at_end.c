@@ -13,3 +13,9 @@ struct Node * insertAtEnd(struct Node *head, int data){
     ptr->next = NULL;
     return head;
 }
+int main(){
+	struct node*head;
+	head=(struct node*)malloc(sizeof(struct node));
+	head=insert_at_end(head,56);
+	return 0;
+}
