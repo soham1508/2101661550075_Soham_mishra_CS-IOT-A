@@ -18,4 +18,15 @@ struct Node * deleteAtLast(struct Node * head){
     free(q);
     return head;
 }
+int main(){
+	struct node*head;
+	head=(struct node*)malloc(sizeof(struct node));
+	third = (struct Node *)malloc(sizeof(struct Node));
+	 head->data = 1;
+    head->next = third;
+	 third->data = 41;
+         third->next = NULL;
+	head=deleteAtLast(head);
+	return 0;
+}
 
